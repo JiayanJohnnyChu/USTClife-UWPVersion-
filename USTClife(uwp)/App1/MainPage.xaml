@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <muxc:NavigationView x:Name="NvAll" ItemInvoked="NvAll_ItemInvoked">
+        <muxc:NavigationView.Background>
+            <muxc:AcrylicBrush/>
+        </muxc:NavigationView.Background>
+        <muxc:NavigationView.MenuItems>
+            <muxc:NavigationViewItem Icon="TouchPointer" Content="最多点击" Tag="MostClicked" />
+            <muxc:NavigationViewItem Icon="Library" Content="学在科大" Tag="LearningInUSTC" />
+            <muxc:NavigationViewItem Icon="World" Content="乐在科大" Tag="HavingFunInUSTC" />
+            <muxc:NavigationViewItem Icon="GoToStart" Content="技术乐园" Tag="TechnologyPark" />
+            <muxc:NavigationViewItem Icon="Find" Content="教室查询" Tag="FindingClassrooms" />
+            <muxc:NavigationViewItem Icon="Link" Content="外部网站" Tag="LinkingWebsites" />
+            <muxc:NavigationViewItem Icon="More" Content="其它" Tag="Others" />
+        </muxc:NavigationView.MenuItems>
+        <Frame x:Name="ContentFrame"/>
+    </muxc:NavigationView>
+</Page>
